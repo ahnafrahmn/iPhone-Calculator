@@ -1,119 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Calculator</title>
-    <style>
-        @import url(https://fonts.googleapis.com/css?family=Roboto:100);
-        body{
-            background-color: rgb(0, 0, 0);
-            font-family: "Helvetica Neue", sans-serif;
-        }
-
-        .container1{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-        }
-        .container2{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            border: 5px solid;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 10px;
-        }
-        div{
-            border: transparent;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin: 2px;
-            font-weight:300;
-            font-size: 20px;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .disp{
-            background-color: black;
-            color:white;
-            border: transparent;
-            text-align: right;
-            padding-right: 5px;
-            font-size: 60px;
-            margin: 0;
-            min-height: 70px;
-            max-width: 229.2px;
-        }
-        .buttons:active,
-        .buttons:focus{
-            filter: brightness(140%);
-        }
-        #grey{
-            background-color: grey;
-        }
-        .operator{
-            background-color: orange;
-            color: white;
-        }
-        .digits{
-            color: white;
-            background-color: rgb(42, 40, 40);
-        }
-        .col2{
-            width: 90px;
-            border-radius: 55px; 
-            justify-content: flex-start;
-            padding-left: 20px;
-        }
-    </style>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container1">
-        <div class="container2">
-            <table>
-                <tr>
-                    <td colspan="4"><p class="disp"></p></td>
-                </tr>
-                <tr>
-                    <td><div id="grey" class="clear  buttons">AC</div></td>
-                    <!-- <td><div id="grey">&plusmn</div></td> -->
-                    <td><div id="grey" class="plusMinus buttons">+/-</div></td>
-                    <td><div id="grey" class="percent buttons">%</div></td>
-                    <td><div class="operator  op_div buttons">&divide</div></td>
-                </tr>
-                <tr>
-                    <td><div class="digits digits7  buttons">7</div></td>
-                    <td><div class="digits digits8  buttons">8</div></td>
-                    <td><div class="digits digits9  buttons">9</div></td>
-                    <td><div class="operator  op_mul buttons">x</div></td>
-                </tr>
-                <tr>
-                    <td><div class="digits digits4  buttons">4</div></td>
-                    <td><div class="digits digits5  buttons">5</div></td>
-                    <td><div class="digits digits6  buttons">6</div></td>
-                    <td><div class="operator op_sub  buttons">-</div></td>
-                </tr>
-                <tr>
-                    <td><div class="digits digits1  buttons">1</div></td>
-                    <td><div class="digits digits2  buttons">2</div></td>
-                    <td><div class="digits digits3  buttons">3</div></td>
-                    <td><div class="operator  op_sum buttons">+</div></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><div class="digits digits0 buttons col2">0</div></td>
-                    <td><div class="digits deci buttons">.</div></td>
-                    <td><div class="operator  op_eq buttons">=</div></td>
-                </tr>
-            </table>
-        </div>
+    
+    <!-- Ahnaf's Code    
+    IG : @ahnaf.rahmn   
+    Mail : ahnaf.rahmn@gmail.com -->
+    <div class="main">
+        <div class="disp">0</div>
+        <div class="grid"></div>
     </div>
-   <script src="calculator.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
